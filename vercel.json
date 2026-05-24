@@ -1,6 +1,6 @@
 {
-  "installCommand": "npm install",
-  "buildCommand": "npm run build",
-  "outputDirectory": "wedding-invitation/dist",
-  "framework": "vite"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install --prefix wedding-invitation",
+  "buildCommand": "npm run build --prefix wedding-invitation",
+  "outputDirectory": "wedding-invitation/dist"
 }

@@ -13,9 +13,19 @@ npm run dev
 From the repo root you can also run:
 
 ```bash
-npm install --prefix wedding-invitation
+npm install
 npm run dev
 ```
+
+(`postinstall` installs dependencies inside `wedding-invitation/`.)
+
+## Deploy on Vercel
+
+The app lives in `wedding-invitation/`. Root `vercel.json` runs install and build there so `vite` is available during the build.
+
+- **Install:** `npm install --prefix wedding-invitation`
+- **Build:** `npm run build --prefix wedding-invitation`
+- **Output:** `wedding-invitation/dist`
 
 ## Scripts
 

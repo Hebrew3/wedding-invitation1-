@@ -6,6 +6,7 @@
     "build": "npm run build --prefix wedding-invitation",
     "lint": "npm run lint --prefix wedding-invitation",
     "preview": "npm run preview --prefix wedding-invitation",
-    "check": "npm run check --prefix wedding-invitation"
+    "check": "npm run check --prefix wedding-invitation",
+    "postinstall": "npm install --prefix wedding-invitation"
   }
 }
