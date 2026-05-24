@@ -1,0 +1,60 @@
+.music-toggle {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(123, 0, 28, 0.92);
+  border: 1px solid rgba(243, 196, 196, 0.35);
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(60, 10, 20, 0.35);
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.music-toggle:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(123, 0, 28, 0.45);
+}
+
+.music-toggle.is-playing .music-toggle-icon {
+  animation: music-bob 1.2s ease-in-out infinite;
+}
+
+@keyframes music-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.music-toggle-icon {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.music-toggle-label {
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 480px) {
+  .music-toggle-label {
+    display: none;
+  }
+
+  .music-toggle {
+    padding: 0.75rem;
+    border-radius: 50%;
+  }
+}

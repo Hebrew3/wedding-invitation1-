@@ -1,0 +1,11 @@
+{
+  "name": "wedding-2",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev --prefix wedding-invitation",
+    "build": "npm run build --prefix wedding-invitation",
+    "lint": "npm run lint --prefix wedding-invitation",
+    "preview": "npm run preview --prefix wedding-invitation",
+    "check": "npm run check --prefix wedding-invitation"
+  }
+}
